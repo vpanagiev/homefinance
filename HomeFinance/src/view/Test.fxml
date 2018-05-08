@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TestController">
+   <children>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+         <items>
+            <VBox spacing="10.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Payer:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label text="Name:" />
+                        <TextField />
+                        <Label text="Total:" />
+                        <TextField />
+                        <Label text="Date:" />
+                        <TextField />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox>
+               <children>
+                  <ListView />
+                  <Button mnemonicParsing="false" text="Select" />
+               </children>
+            </HBox>
+         </items>
+      </SplitPane>
+      <SplitPane orientation="VERTICAL">
+        <items>
+            <HBox alignment="BOTTOM_LEFT" spacing="10.0">
+               <children>
+                  <Button fx:id="addPerson" onAction="#addPerson" text="Add Person" />
+                  <Button mnemonicParsing="false" text="Add&amp;Update" />
+                  <Button mnemonicParsing="false" text="Clear" />
+               </children>
+            </HBox>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>

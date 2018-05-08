@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<TableView fx:id="tableView" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OverviewController">
+	<columns>
+		<TableColumn fx:id="userColumn" maxWidth="225.0" minWidth="-1.0" prefWidth="97.0" text="User" />
+		<TableColumn maxWidth="225.0" minWidth="-Infinity" prefWidth="128.0" text="General">
+			<columns>
+				<TableColumn fx:id="incomeColumn" prefWidth="75.0" text="Income" />
+				<TableColumn fx:id="expensesColumn" prefWidth="75.0" text="Expenses" />
+				<TableColumn fx:id="totalGeneralColumn" prefWidth="75.0" text="Total" />
+			</columns>
+		</TableColumn>
+		<TableColumn maxWidth="-1.0" minWidth="-1.0" prefWidth="-1.0" text="Due amount">
+			<columns>
+				<TableColumn fx:id="personDueColumn" prefWidth="75.0" text="Person" />
+				<TableColumn fx:id="amountDueColumn" prefWidth="75.0" text="Amount" />
+				<TableColumn fx:id="totalDueColumn" prefWidth="75.0" text="Total" />
+			</columns>
+		</TableColumn>
+		<TableColumn maxWidth="250.0" minWidth="-1.0" prefWidth="250.0" text="Owe amount">
+			<columns>
+				<TableColumn fx:id="personOweColumn" prefWidth="75.0" text="Person" />
+				<TableColumn fx:id="amountOwnColumn" prefWidth="75.0" text="Amount" />
+				<TableColumn fx:id="totalOweColumn" prefWidth="75.0" text="Total" />
+			</columns>
+		</TableColumn>
+	</columns>
+</TableView>

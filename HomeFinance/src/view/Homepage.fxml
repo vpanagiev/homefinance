@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomepageController">
+   <center>
+      <TabPane tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="TOP_LEFT">
+        <tabs>
+          <Tab fx:id="overviewTab" text="Overview">
+                <fx:include fx:id="overviewTabPage" source="OverviewTab.fxml" />
+          </Tab>
+          <Tab fx:id="addBillTab" text="Add Bill">
+                 <fx:include fx:id="addBillTabPage" source="AddBillTab.fxml" />
+          </Tab>
+            <Tab fx:id="incomeTab" text="Income">
+               <content>
+                 <fx:include fx:id="incomeTabPage" source="IncomeTab.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="repaymentTab" text="Repayment">
+               <content>
+                   <fx:include fx:id="repaymentTabPage" source="RepaymentTab.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="graphsTab" text="Graphs">
+               <content>
+                   <fx:include fx:id="graphsTabPage" source="GraphsTab.fxml" />
+               </content>
+            </Tab>
+            <Tab fx:id="testTab" text="Test">
+            <content>
+                   <fx:include fx:id="testTabPage" source="Test.fxml" />
+               </content>
+            </Tab>
+        </tabs>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </TabPane>
+   </center>
+</BorderPane>
